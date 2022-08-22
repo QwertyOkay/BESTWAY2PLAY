@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.modal__backdrop6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.62);
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity, visibility;
+    /* transition-duration: $duration;
+    transition-timing-function: $function; */
+}
+.modal__backdrop6.is-hidden6 {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal__backdrop6.is-hidden6>.modal6 {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.9);
+}
+
+
+.modal__close6 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} 
