@@ -69,13 +69,16 @@
               To: "opacity-0 scale-95"
           -->
           <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-            <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden" style="display: none;">
+            <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden" >
               <div class="px-5 pt-4 flex items-center justify-between">
                 <div>
                   <img class="h-8 w-auto" src="./img/v7.png" alt="logo">
                 </div>
-                <div class="-mr-2">
-                  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+
+                <div class="-mr-2" style="display: none;">
+                  <button type="button" 
+                  data-menu-close
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span class="sr-only">Close main menu</span>
                     <!-- Heroicon name: outline/x -->
                     <svg class="h-6 w-6" xmlns="./img" 
@@ -85,7 +88,8 @@
                   </button>
                 </div>
               </div>
-              <!-- <div class="px-2 pt-2 pb-3 space-y-1">
+
+              <div class="px-2 pt-2 pb-3 space-y-1"data-menu style="display: none;">
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
   
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
@@ -93,7 +97,7 @@
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
   
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
@@ -192,7 +196,8 @@
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
-            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
+            aria-controls="mobile-menu" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <!--
                 Icon when menu is closed.
@@ -233,27 +238,6 @@
             </div>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            
-    
-            <!-- Profile dropdown -->
-            <!-- <div class="ml-3 relative">
-              <div>
-                <button type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                  <span class="sr-only">Open user menu</span>
-                  <img class="h-8 w-8 rounded-full" src="./img/v7.png" alt="">
-                </button>
-              </div> -->
-    
-              <!--
-                Dropdown menu, show/hide based on menu state.
-    
-                Entering: "transition ease-out duration-100"
-                  From: "transform opacity-0 scale-95"
-                  To: "transform opacity-100 scale-100"
-                Leaving: "transition ease-in duration-75"
-                  From: "transform opacity-100 scale-100"
-                  To: "transform opacity-0 scale-95"
-              -->
             </div>
           </div>
         </div>
